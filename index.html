@@ -1,101 +1,458 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flatsome Header (Sin Comentarios)</title>
+    <title>FLATSOME - Clothing Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header class="header-simple">
-    <div class="top-bar-simple">
-        <div class="container-simple">
-            <div class="top-links">
-                <a href="#">Cuenta</a>
-                <a href="#">Moneda</a>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">
+                    <span>Free shipping on orders over $50</span>
+                </div>
+                <div class="top-right">
+                    <a href="#">LOGIN</a>
+                    <span>CART: HAVE <i class="fas fa-shopping-cart"></i></span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <nav class="main-nav-simple">
-        <div class="container-simple nav-content">
-            <div class="logo-simple">FLATSOME</div>
-            <ul class="menu-simple">
-                <li><a href="#" class="active">HOME</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">PAGES</a></li>
-                <li><a href="#">BLOG</a></li>
-            </ul>
-            <div class="nav-icons">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-bag"></i>
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <i class="fas fa-circle"></i>
+                        <span>FLATSOME</span>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#" class="active">HOME</a></li>
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">ELEMENTS</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-bag"></i>
+                        <div class="mobile-menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CHANGE THIS<br>TO ANYTHING</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam nonumy eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">SHOP NOW</a>
+                <a href="#" class="btn-secondary">SHOP WOMEN</a>
             </div>
         </div>
-    </nav>
-</header>
-
-<section class="hero-simple">
-    <div class="hero-content-simple">
-        <h1>CHANGE THIS<br>TO ANYTHING</h1>
-        <p>Your subtitle text here, just a simple line.</p>
-        <div class="hero-buttons">
-            <a href="#" class="btn-primary-simple">SHOP NOW</a>
-            <a href="#" class="btn-secondary-simple">READ MORE</a>
-        </div>
-    </div>
-</section>
-
-<section class="features-bar-simple">
-    <div class="container-simple features-content">
-        <div class="feature-item-simple">
-            <i class="fas fa-shipping-fast"></i>
-            <p>Free shipping all products <br>above $99</p>
-        </div>
-        <div class="feature-item-simple">
-            <i class="fas fa-star"></i>
-            <p>New products added <br>everyday</p>
-        </div>
-        <div class="feature-item-simple">
-            <i class="fas fa-exchange-alt"></i>
-            <p>Free shipping all products <br>above $99</p>
-        </div>
-    </div>
-</section>
-
-<section class="products-section-simple">
-    <div class="container-simple">
-        <h2>FEATURED PRODUCTS</h2>
-        <div class="product-grid-simple">
-            <div class="product-card-simple">
-                <img src="img/shirt-girl.jpeg" alt="Producto 1">
-                <p class="product-category">NEW</p>
-                <p class="product-name">OSAKA SWEATSHIRT</p>
-                <p class="product-price">$99.00</p>
-            </div>
-            <div class="product-card-simple">
-                <img src="img/shirt-man.jpeg" alt="Producto 2">
-                <p class="product-category">SALE</p>
-                <p class="product-name">FLATSOME CAP</p>
-                <p class="product-price">$79.00 <del>$110.00</del></p>
-            </div>
-            <div class="product-card-simple">
-                <img src="product3.jpg" alt="Producto 3">
-                <p class="product-category">NEW</p>
-                <p class="product-name">BLACK SNEAKERS</p>
-                <p class="product-price">$59.00</p>
-            </div>
-            <div class="product-card-simple">
-                <img src="product4.jpg" alt="Producto 4">
-                <p class="product-category">OUT OF STOCK</p>
-                <p class="product-name">NAVY SWEATER</p>
-                <p class="product-price">$67.00</p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">2500</div>
+                <div class="stat-label">MEMBERS</div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Features Bar -->
+    <section class="features-bar">
+        <div class="container">
+            <div class="features-content">
+                <div class="feature-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <div class="feature-text">
+                        <strong>Free Shipping all products</strong>
+                        <span>above $99</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-plus-circle"></i>
+                    <div class="feature-text">
+                        <strong>New products added</strong>
+                        <span>everyday</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <div class="feature-text">
+                        <strong>Free Shipping all products</strong>
+                        <span>above $99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Featured Products -->
+    <section class="products-section">
+        <div class="container">
+            <h2>FEATURED PRODUCTS</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/shirt-girl.jpeg" alt="Girl's Jersey Shirt">
+                        <div class="product-overlay">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">Girl's Jersey Shirt-2</span>
+                        <span class="product-price">$49.00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/shirt-man.jpeg" alt="Osaka University">
+                        <div class="product-overlay">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">Osaka University 18</span>
+                        <span class="product-price">$79.00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/surfing-3.jpg" alt="All Star Canvas">
+                        <div class="product-overlay">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">All Star Canvas Hi Converse</span>
+                        <span class="product-price">$29.00</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/shirt-girl.jpeg" alt="Pullover Champion">
+                        <div class="product-overlay">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-name">From The Pullover Champion Reverse</span>
+                        <span class="product-price">$49.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Categories -->
+    <section class="browse-section">
+        <div class="container">
+            <h2>BROWSE</h2>
+            <div class="browse-grid">
+                <div class="browse-item">
+                    <img src="img/shirt-man.jpeg" alt="Clothing">
+                    <div class="browse-overlay">
+                        <span>CLOTHING</span>
+                    </div>
+                </div>
+                <div class="browse-item">
+                    <img src="img/shirt-girl.jpeg" alt="Footwear">
+                    <div class="browse-overlay">
+                        <span>FOOTWEAR</span>
+                    </div>
+                </div>
+                <div class="browse-item">
+                    <img src="img/surfing-3.jpg" alt="Accessories">
+                    <div class="browse-overlay">
+                        <span>ACCESSORIES</span>
+                    </div>
+                </div>
+                <div class="browse-item">
+                    <img src="img/shirt-man.jpeg" alt="Bags">
+                    <div class="browse-overlay">
+                        <span>BAGS</span>
+                    </div>
+                </div>
+                <div class="browse-item">
+                    <img src="img/shirt-girl.jpeg" alt="Watches">
+                    <div class="browse-overlay">
+                        <span>WATCHES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest-news">
+        <div class="container">
+            <h2>LATEST NEWS</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="img/surfing-3.jpg" alt="News">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month">JAN</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>WELCOME TO FLATSOME!</h3>
+                        <p>The best UX/UI designer and front-end developer</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="img/shirt-man.jpeg" alt="News">
+                        <div class="news-date">
+                            <span class="day">14</span>
+                            <span class="month">JAN</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>JUST ANOTHER POST WITH A</h3>
+                        <p>Nulla consectetur lorem ipsum consectetur adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="img/shirt-girl.jpeg" alt="News">
+                        <div class="news-date">
+                            <span class="day">13</span>
+                            <span class="month">JAN</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>A SIMPLE BLOG POST</h3>
+                        <p>Consectetur adipiscing elit sed do eiusmod</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-image">
+                        <img src="img/surfing-3.jpg" alt="News">
+                        <div class="news-date">
+                            <span class="day">12</span>
+                            <span class="month">JAN</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <h3>A VIDEO BLOG POST</h3>
+                        <p>Nulla consectetur lorem ipsum consectetur elit sed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>SIGNUP FOR NEWSLETTER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam nonumy eiusmod tempor incididunt ut labore et dolore magna aliquyam eiusmod.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Your Email Address...">
+                <button type="submit">SIGN UP</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Gallery -->
+    <section class="bottom-gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/surfing-3.jpg" alt="Wave 1">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-tag">LATEST</span>
+                        <h4>Girls Jersey Shirt-2</h4>
+                        <span class="gallery-price">$79.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/surfing-3.jpg" alt="Wave 2">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-tag">BEST SELLING</span>
+                        <h4>Osaka Blue Shirt By Hira Keelay 18</h4>
+                        <span class="gallery-price">$79.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/surfing-3.jpg" alt="Wave 3">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-tag">FEATURED</span>
+                        <h4>Osaka Entry Tee Sleeves 18</h4>
+                        <span class="gallery-price">$35.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/surfing-3.jpg" alt="Wave 4">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-tag">TOP RATED PRODUCTS</span>
+                        <h4>Surfing (SVT)</h4>
+                        <span class="gallery-price">$39.00 - $59.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/surfing-3.jpg" alt="Wave 5">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-tag">TOP RATED PRODUCTS</span>
+                        <h4>Surfing (SVT)</h4>
+                        <span class="gallery-price">$39.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/surfing-3.jpg" alt="Wave 6">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-tag">FEATURED</span>
+                        <h4>From The Jack & Jones</h4>
+                        <span class="gallery-price">$29.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/surfing-3.jpg" alt="Wave 7">
+                <div class="gallery-overlay">
+                    <div class="gallery-content">
+                        <span class="gallery-tag">SALE</span>
+                        <h4>From The Jack & Jones</h4>
+                        <span class="gallery-price">$29.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Us Section -->
+                <div class="footer-section">
+                    <h3>ABOUT US</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+                <!-- Latest News Section -->
+                <div class="footer-section">
+                    <h3>LATEST NEWS</h3>
+                    <div class="footer-news">
+                        <div class="footer-news-item">
+                            <span class="news-number">01</span>
+                            <div>
+                                <h4>Welcome to Flatsome!</h4>
+                                <p>15 January 2021</p>
+                            </div>
+                        </div>
+                        <div class="footer-news-item">
+                            <span class="news-number">02</span>
+                            <div>
+                                <h4>Just another post with A</h4>
+                                <p>14 January 2021</p>
+                            </div>
+                        </div>
+                        <div class="footer-news-item">
+                            <span class="news-number">03</span>
+                            <div>
+                                <h4>A Simple Blog Post</h4>
+                                <p>13 January 2021</p>
+                            </div>
+                        </div>
+                        <div class="footer-news-item">
+                            <span class="news-number">04</span>
+                            <div>
+                                <h4>A Video Blog Post</h4>
+                                <p>12 January 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tags Section -->
+                <div class="footer-section">
+                    <h3>TAGS</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">blog</span>
+                        <span class="tag">classic</span>
+                        <span class="tag">clean</span>
+                        <span class="tag">creative</span>
+                        <span class="tag">css</span>
+                        <span class="tag">fullscreen</span>
+                        <span class="tag">html</span>
+                        <span class="tag">html5</span>
+                        <span class="tag">minimal</span>
+                        <span class="tag">modern</span>
+                        <span class="tag">multipurpose</span>
+                        <span class="tag">page</span>
+                        <span class="tag">responsive</span>
+                        <span class="tag">shop</span>
+                        <span class="tag">theme</span>
+                        <span class="tag">woocommerce</span>
+                    </div>
+                </div>
+
+                <!-- Newsletter Section -->
+                <div class="footer-section">
+                    <h3>SIGNUP FOR NEWSLETTER</h3>
+                    <p>Signup to get news about Flatsome & WooThemes. We don't spam.</p>
+                    <div class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address...">
+                        <button type="submit">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="payment-methods">
+                        <span>VISA</span>
+                        <span>PayPal</span>
+                        <span>Stripe</span>
+                        <span>AMEX</span>
+                        <span>SKRILL</span>
+                    </div>
+                    <p>Copyright 2024 © NordicMadeTheme</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
