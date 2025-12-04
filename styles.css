@@ -82,15 +82,11 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    letter-spacing: 1px;
 }
 
-.logo i {
-    color: #007acc;
-    font-size: 16px;
+.logo img {
+    height: 35px;
+    width: auto;
 }
 
 .menu {
@@ -461,15 +457,6 @@ body {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.browse-count {
-    display: block;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
