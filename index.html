@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FLATSOME - Clothing Store</title>
+    <title>FLATSOME - Tienda Online</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -21,7 +21,7 @@
           </div>
           <div class="top-right">
             <a href="#">LOGIN</a>
-            <span>CART: HAVE <i class="fas fa-shopping-cart"></i></span>
+            <span>CART: <i class="fas fa-shopping-cart"></i></span>
           </div>
         </div>
       </div>
@@ -37,8 +37,8 @@
               <li><a href="#" class="active">HOME</a></li>
               <li><a href="#">FEATURES</a></li>
               <li><a href="#">SHOP</a></li>
-              <li><a hrFlatsome-Logo-1000x247.webpef="#">PAGES</a></li>
-              <li><a hrFlatsome-Logo-1000x247.webpef="#">BLOG</a></li>
+              <li><a href="#">PAGES</a></li>
+              <li><a href="#">BLOG</a></li>
               <li><a href="#">ELEMENTS</a></li>
             </ul>
             <div class="nav-icons">
@@ -55,7 +55,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" aria-label="Hero">
       <div class="hero-content">
         <h1>CHANGE THIS<br />TO ANYTHING</h1>
         <p>
@@ -76,7 +76,8 @@
     </section>
 
     <!-- Features Bar -->
-    <section class="features-bar">
+    <section class="features-bar" aria-label="Info Banners">
+      <h2 class="sr-only">Características</h2>
       <div class="container">
         <div class="features-content">
           <div class="feature-item">
@@ -104,319 +105,383 @@
       </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="products-section">
-      <div class="container">
-        <h2>FEATURED PRODUCTS</h2>
-        <div class="product-grid">
-          <div class="product-card">
-            <div class="product-image">
-              <img src="img/girl.jpeg" alt="On1 Jersey UNIF-2" />
-              <div class="product-overlay">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="product-category">SWEATERS</span>
-              <span class="product-name">On1 Jersey UNIF-2</span>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="product-price">$39.00</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <img src="img/dude.jpeg" alt="Osaka Entry Tee Superfry 12" />
-              <div class="product-overlay">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="product-category">MEN</span>
-              <span class="product-name">Osaka Entry Tee Superfry 12</span>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="product-price">$29.00</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <img src="img/shoes.jpeg" alt="All Star Canvas Hi Converse" />
-              <div class="product-overlay">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="product-category">SHOES</span>
-              <span class="product-name">All Star Canvas Hi Converse</span>
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="product-price">$29.00</span>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-image">
-              <img
-                src="img/woman.jpeg"
-                alt="Fluro Bis Pullover Designers Remix"
-              />
-              <div class="product-overlay">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-search"></i>
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-            </div>
-            <div class="product-info">
-              <span class="product-category">SWEATERS</span>
-              <span class="product-name"
-                >Fluro Bis Pullover Designers Remix</span
-              >
-              <div class="product-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <span class="product-price">$49.00</span>
-            </div>
-          </div>
+    <!-- Main Content -->
+    <main>
+      <!-- Featured Products -->
+      <section class="products-section" aria-label="Featured Products">
+        <div class="container">
+          <h2>FEATURED PRODUCTS</h2>
+          <ul class="product-grid">
+            <li>
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="img/girl.jpeg" alt="On1 Jersey UNIF-2" />
+                  <div class="product-overlay">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">SWEATERS</span>
+                  <h3 class="product-name">On1 Jersey UNIF-2</h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="product-price">$39.00</span>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="img/dude.jpeg" alt="Osaka Entry Tee Superfry 12" />
+                  <div class="product-overlay">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">MEN</span>
+                  <h3 class="product-name">Osaka Entry Tee Superfry 12</h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="product-price">$29.00</span>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-image">
+                  <img src="img/shoes.jpeg" alt="All Star Canvas Hi Converse" />
+                  <div class="product-overlay">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">SHOES</span>
+                  <h3 class="product-name">All Star Canvas Hi Converse</h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="product-price">$29.00</span>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="product-card">
+                <div class="product-image">
+                  <img
+                    src="img/woman.jpeg"
+                    alt="Fluro Bis Pullover Designers Remix"
+                  />
+                  <div class="product-overlay">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <span class="product-category">SWEATERS</span>
+                  <h3 class="product-name">
+                    Fluro Bis Pullover Designers Remix
+                  </h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <span class="product-price">$49.00</span>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Browse Categories -->
-    <section class="browse-section">
-      <div class="container">
-        <h2>BROWSE</h2>
-        <div class="browse-grid">
-          <div class="browse-item">
-            <img src="img/hoodie.jpg" alt="Clothing" />
-            <div class="browse-overlay">
-              <span class="browse-title">CLOTHING</span>
-            </div>
-          </div>
-          <div class="browse-item">
-            <img src="img/earring-woman.jpg" alt="Women" />
-            <div class="browse-overlay">
-              <span class="browse-title">WOMEN</span>
-            </div>
-          </div>
-          <div class="browse-item">
-            <img src="img/peace-sign.jpg" alt="Accessories" />
-            <div class="browse-overlay">
-              <span class="browse-title">ACCESSORIES</span>
-            </div>
-          </div>
-          <div class="browse-item">
-            <img src="img/dude.jpeg" alt="Men" />
-            <div class="browse-overlay">
-              <span class="browse-title">MEN</span>
-            </div>
-          </div>
-          <div class="browse-item">
-            <img src="img/bag.jpeg" alt="Bags" />
-            <div class="browse-overlay">
-              <span class="browse-title">BAGS</span>
-            </div>
-          </div>
+      <!-- Browse Categories -->
+      <section class="browse-section" aria-label="Browse Products">
+        <div class="container">
+          <h2>BROWSE</h2>
+          <ul class="browse-grid">
+            <li>
+              <article class="browse-item">
+                <img src="img/hoodie.jpg" alt="Clothing" />
+                <div class="browse-overlay">
+                  <h3 class="browse-title">CLOTHING</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="browse-item">
+                <img src="img/earring-woman.jpg" alt="Women" />
+                <div class="browse-overlay">
+                  <h3 class="browse-title">WOMEN</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="browse-item">
+                <img src="img/peace-sign.jpg" alt="Accessories" />
+                <div class="browse-overlay">
+                  <h3 class="browse-title">ACCESSORIES</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="browse-item">
+                <img src="img/dude.jpeg" alt="Men" />
+                <div class="browse-overlay">
+                  <h3 class="browse-title">MEN</h3>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="browse-item">
+                <img src="img/bag.jpeg" alt="Bags" />
+                <div class="browse-overlay">
+                  <h3 class="browse-title">BAGS</h3>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Latest News -->
-    <section class="latest-news">
-      <div class="container">
-        <h2>LATEST NEWS</h2>
-        <div class="news-grid">
-          <div class="news-item">
-            <div class="news-image">
-              <img src="img/tablet.jpg" alt="News" />
-              <div class="news-date">
-                <span class="day">19</span>
-                <span class="month">Oct</span>
-              </div>
-            </div>
-            <div class="news-content">
-              <h3>WELCOME TO FLATSOME</h3>
-              <p>
-                Welcome to WordPress. This is your first post. Edit or delete
-                it, then start blogging! [...]
-              </p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-image">
-              <img src="img/dude.jpeg" alt="News" />
-              <div class="news-date">
-                <span class="day">13</span>
-                <span class="month">Oct</span>
-              </div>
-            </div>
-            <div class="news-content">
-              <h3>JUST ANOTHER POST WITH A GALLERY</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed
-                vulputate massa. Fusce ante magna, [...]
-              </p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-image">
-              <img src="img/chill.jpg" alt="News" />
-              <div class="news-date">
-                <span class="day">13</span>
-                <span class="month">Oct</span>
-              </div>
-            </div>
-            <div class="news-content">
-              <h3>A SIMPLE BLOG POST</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed
-                diam nonummy nibh euismod tincidunt ut [...]
-              </p>
-            </div>
-          </div>
-          <div class="news-item">
-            <div class="news-image">
-              <img src="img/sitting.jpg" alt="News" />
-              <div class="news-date">
-                <span class="day">01</span>
-                <span class="month">Jan</span>
-              </div>
-            </div>
-            <div class="news-content">
-              <h3>A VIDEO BLOG POST</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed
-                vulputate massa. Fusce ante magna, [...]
-              </p>
-            </div>
-          </div>
+      <!-- Latest News -->
+      <section class="latest-news" aria-label="Latest News">
+        <div class="container">
+          <h2>LATEST NEWS</h2>
+          <ul class="news-grid">
+            <li>
+              <article class="news-item">
+                <div class="news-image">
+                  <img src="img/tablet.jpg" alt="News" />
+                  <div class="news-date">
+                    <span class="day">19</span>
+                    <span class="month">Oct</span>
+                  </div>
+                </div>
+                <div class="news-content">
+                  <h3>WELCOME TO FLATSOME</h3>
+                  <p>
+                    Welcome to WordPress. This is your first post. Edit or
+                    delete it, then start blogging! [...]
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="news-item">
+                <div class="news-image">
+                  <img src="img/dude.jpeg" alt="News" />
+                  <div class="news-date">
+                    <span class="day">13</span>
+                    <span class="month">Oct</span>
+                  </div>
+                </div>
+                <div class="news-content">
+                  <h3>JUST ANOTHER POST WITH A GALLERY</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed vulputate massa. Fusce ante magna, [...]
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="news-item">
+                <div class="news-image">
+                  <img src="img/chill.jpg" alt="News" />
+                  <div class="news-date">
+                    <span class="day">13</span>
+                    <span class="month">Oct</span>
+                  </div>
+                </div>
+                <div class="news-content">
+                  <h3>A SIMPLE BLOG POST</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed diam nonummy nibh euismod tincidunt ut [...]
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="news-item">
+                <div class="news-image">
+                  <img src="img/sitting.jpg" alt="News" />
+                  <div class="news-date">
+                    <span class="day">01</span>
+                    <span class="month">Jan</span>
+                  </div>
+                </div>
+                <div class="news-content">
+                  <h3>A VIDEO BLOG POST</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    sed vulputate massa. Fusce ante magna, [...]
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-      <div class="container">
-        <h2>SIGNUP FOR NEWSLETTER</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam
-          nonumy eiusmod tempor incididunt ut labore et dolore magna aliquyam
-          eiusmod.
-        </p>
-        <div class="newsletter-form">
-          <input type="email" placeholder="Your Email Address..." />
-          <button type="submit">SIGN UP</button>
+      <!-- Newsletter Section -->
+      <section class="newsletter" aria-label="Newsletter Signup">
+        <div class="container">
+          <h2>SIGNUP FOR NEWSLETTER</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed diam
+            nonumy eiusmod tempor incididunt ut labore et dolore magna aliquyam
+            eiusmod.
+          </p>
+          <form class="newsletter-form">
+            <label for="newsletter-email" class="sr-only"
+              >Your Email Address</label
+            >
+            <input
+              type="email"
+              id="newsletter-email"
+              placeholder="Your Email Address..."
+              required
+            />
+            <button type="submit">SIGN UP</button>
+          </form>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Bottom Gallery -->
-    <section class="bottom-gallery">
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="img/boat-in-sea.jpg" alt="Wave 1" />
-          <div class="gallery-overlay">
-            <div class="gallery-content">
-              <span class="gallery-tag">LATEST</span>
-              <h4>Girls Jersey Shirt-2</h4>
-              <span class="gallery-price">$79.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/cherry.jpg" alt="Wave 2" />
-          <div class="gallery-overlay">
-            <div class="gallery-content">
-              <span class="gallery-tag">BEST SELLING</span>
-              <h4>Osaka Blue Shirt By Hira Keelay 18</h4>
-              <span class="gallery-price">$79.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/surfing-3.jpg" alt="Wave 3" />
-          <div class="gallery-overlay">
-            <div class="gallery-content">
-              <span class="gallery-tag">FEATURED</span>
-              <h4>Osaka Entry Tee Sleeves 18</h4>
-              <span class="gallery-price">$35.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/cliff.jpg" alt="Wave 4" />
-          <div class="gallery-overlay">
-            <div class="gallery-content">
-              <span class="gallery-tag">TOP RATED PRODUCTS</span>
-              <h4>Surfing (SVT)</h4>
-              <span class="gallery-price">$39.00 - $59.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/lake.jpg" alt="Wave 5" />
-          <div class="gallery-overlay">
-            <div class="gallery-content">
-              <span class="gallery-tag">TOP RATED PRODUCTS</span>
-              <h4>Surfing (SVT)</h4>
-              <span class="gallery-price">$39.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/lantern.jpg" alt="Wave 6" />
-          <div class="gallery-overlay">
-            <div class="gallery-content">
-              <span class="gallery-tag">FEATURED</span>
-              <h4>From The Jack & Jones</h4>
-              <span class="gallery-price">$29.00</span>
-            </div>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="img/tree.jpg" alt="Wave 7" />
-          <div class="gallery-overlay">
-            <div class="gallery-content">
-              <span class="gallery-tag">SALE</span>
-              <h4>From The Jack & Jones</h4>
-              <span class="gallery-price">$29.00</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <!-- Bottom Gallery -->
+      <section class="bottom-gallery" aria-label="Product Gallery">
+        <h2 class="sr-only">Product Gallery</h2>
+        <ul class="gallery-grid">
+          <li>
+            <article class="gallery-item">
+              <img src="img/beautiful.jpg" alt="Wave 1" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">LATEST</span>
+                  <h3>Girls Jersey Shirt-2</h3>
+                  <span class="gallery-price">$79.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="gallery-item">
+              <img src="img/lantern.jpg" alt="Wave 2" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">BEST SELLING</span>
+                  <h3>Osaka Blue Shirt By Hira Keelay 18</h3>
+                  <span class="gallery-price">$79.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="gallery-item">
+              <img src="img/lake.jpg" alt="Wave 3" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">FEATURED</span>
+                  <h3>Osaka Entry Tee Sleeves 18</h3>
+                  <span class="gallery-price">$35.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="gallery-item">
+              <img src="img/tree.jpg" alt="Wave 4" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">TOP RATED PRODUCTS</span>
+                  <h3>Surfing (SVT)</h3>
+                  <span class="gallery-price">$39.00 - $59.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="gallery-item">
+              <img src="img/boat-in-sea.jpg" alt="Wave 5" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">TOP RATED PRODUCTS</span>
+                  <h3>Surfing (SVT)</h3>
+                  <span class="gallery-price">$39.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="gallery-item">
+              <img src="img/cliff.jpg" alt="Wave 6" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">FEATURED</span>
+                  <h3>From The Jack & Jones</h3>
+                  <span class="gallery-price">$29.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="gallery-item">
+              <img src="img/cherry.jpg" alt="Wave 7" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">SALE</span>
+                  <h3>From The Jack & Jones</h3>
+                  <span class="gallery-price">$29.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="gallery-item">
+              <img src="img/chill.jpg" alt="Wave 7" />
+              <div class="gallery-overlay">
+                <div class="gallery-content">
+                  <span class="gallery-tag">SALE</span>
+                  <h3>From The Jack & Jones</h3>
+                  <span class="gallery-price">$29.00</span>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <!-- About Us Section -->
-          <div class="footer-section">
-            <h3>ABOUT US</h3>
+          <section class="footer-section" aria-label="About Us">
+            <h2>ABOUT US</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim
               ad minim veniam, quis nostrud exercitation ullamco laboris.
@@ -427,46 +492,46 @@
               <i class="fab fa-instagram"></i>
               <i class="fab fa-youtube"></i>
             </div>
-          </div>
+          </section>
 
           <!-- Latest News Section -->
-          <div class="footer-section">
-            <h3>LATEST NEWS</h3>
-            <div class="footer-news">
-              <div class="footer-news-item">
+          <section class="footer-section" aria-label="Latest News">
+            <h2>LATEST NEWS</h2>
+            <ul class="footer-news">
+              <li class="footer-news-item">
                 <span class="news-number">01</span>
                 <div>
-                  <h4>Welcome to Flatsome!</h4>
+                  <h3>Welcome to Flatsome!</h3>
                   <p>15 January 2021</p>
                 </div>
-              </div>
-              <div class="footer-news-item">
+              </li>
+              <li class="footer-news-item">
                 <span class="news-number">02</span>
                 <div>
-                  <h4>Just another post with A</h4>
+                  <h3>Just another post with A</h3>
                   <p>14 January 2021</p>
                 </div>
-              </div>
-              <div class="footer-news-item">
+              </li>
+              <li class="footer-news-item">
                 <span class="news-number">03</span>
                 <div>
-                  <h4>A Simple Blog Post</h4>
+                  <h3>A Simple Blog Post</h3>
                   <p>13 January 2021</p>
                 </div>
-              </div>
-              <div class="footer-news-item">
+              </li>
+              <li class="footer-news-item">
                 <span class="news-number">04</span>
                 <div>
-                  <h4>A Video Blog Post</h4>
+                  <h3>A Video Blog Post</h3>
                   <p>12 January 2021</p>
                 </div>
-              </div>
-            </div>
-          </div>
+              </li>
+            </ul>
+          </section>
 
           <!-- Tags Section -->
-          <div class="footer-section">
-            <h3>TAGS</h3>
+          <section class="footer-section" aria-label="Tags">
+            <h2>TAGS</h2>
             <div class="tag-cloud">
               <span class="tag">blog</span>
               <span class="tag">classic</span>
@@ -485,17 +550,25 @@
               <span class="tag">theme</span>
               <span class="tag">woocommerce</span>
             </div>
-          </div>
+          </section>
 
           <!-- Newsletter Section -->
-          <div class="footer-section">
-            <h3>SIGNUP FOR NEWSLETTER</h3>
+          <section class="footer-section" aria-label="Newsletter Signup">
+            <h2>SIGNUP FOR NEWSLETTER</h2>
             <p>Signup to get news about Flatsome & WooThemes. We don't spam.</p>
-            <div class="footer-newsletter">
-              <input type="email" placeholder="Your Email Address..." />
+            <form class="footer-newsletter">
+              <label for="footer-email" class="sr-only"
+                >Your Email Address</label
+              >
+              <input
+                type="email"
+                id="footer-email"
+                placeholder="Your Email Address..."
+                required
+              />
               <button type="submit">SIGN UP</button>
-            </div>
-          </div>
+            </form>
+          </section>
         </div>
       </div>
 
